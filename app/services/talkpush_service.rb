@@ -18,7 +18,8 @@ class TalkpushService
         source: ""
       }
     }
-    HttpTool.post("http://localhost:8080?api_key=#{@api_key}", body, nil)
+    #HttpTool.post("#{BASE_URL}/campaigns/#{@campaign_id}/campaign_invitations?api_key=#{@api_key}", body, nil)
+    HttpTool.post("http://localhost:8080", body, nil)
   end
 
   BASE_URL = "https://my.talkpush.com/api/talkpush_services"
