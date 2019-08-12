@@ -12,9 +12,12 @@ class GoogleSheetsService
   end
 
   private def parse_response (p_response)
-    p_response.values[2].map {
-      |candidate| Candidate.new( candidate[0], candidate[1], candidate[2], candidate[3], candidate[4] )
-    }
+    unless p_response["values"].nil?
+      return p_response.values[2].map {
+        |candidate| Candidate.new( candidate[0], candidate[1], candidate[2], candidate[3], candidate[4] )
+      }
+    end
+    []
   end 
 
   BASE_URL = "https://sheets.googleapis.com/v4/spreadsheets/"
