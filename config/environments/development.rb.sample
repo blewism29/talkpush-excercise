@@ -63,11 +63,11 @@ Rails.application.configure do
   ##### APP CONSTANTS #######
 
   ## Google Sheets API
-  config.GOOGLE_SHEETS_API_KEY =  ''
+  config.GOOGLE_SHEETS_API_KEY = ''
   config.GOOGLE_SHEET_ID = ''
   
   ## Talkpush
-  config.TALKPUSH_CAMPAIGNID =
+  config.TALKPUSH_CAMPAIGNID = 
   config.TALKPUSH_API_KEY = ''
   config.TALKPUSH_API_SECRET = ''
 
