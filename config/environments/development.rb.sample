@@ -60,9 +60,15 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
 
-  # Constants
+  ##### APP CONSTANTS #######
 
+  ## Google Sheets API
   config.GOOGLE_SHEETS_API_KEY =  'AIzaSyANgzqaiB2uqU0E6G0sfV7RXIht8ObaNaQ'
   config.GOOGLE_SHEET_ID = '1xkofJa5iI3AQE4yWEoHqMTQ1QQ-VDsfUDDwV96QQDVM'
+  
+  ## Talkpush
+  config.TALKPUSH_CAMPAIGNID = 3929
+  config.TALKPUSH_API_KEY = '48530ba23eef6b45ffbc95d7c20a60b9'
+  config.TALKPUSH_API_SECRET = 'e2f724ba060f82ddf58923af494578a7'
 
 end
