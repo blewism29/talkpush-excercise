@@ -18,9 +18,9 @@ class TalkpushService
         source: ""
       }
     }
-    
+
     begin
-      HttpTool.post("#{BASE_URL}/campaigns/#{@campaign_id}/campaign_invitations?api_key=#{@api_key}", body, nil)
+      HttpTool.post("#{BASE_URL}/campaigns/#{@campaign_id}/campaign_invitations?api_key=#{@api_key}", body,  { 'Content-Type' => 'application/json' })
     rescue Exception => e
       LoggerTool.log_error(e)
       LoggerTool.log_info(body)

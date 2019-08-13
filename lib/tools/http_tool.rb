@@ -7,7 +7,7 @@ class HttpTool
   end
 
   def self.post (p_url, p_body, p_headers)
-    HTTParty.post(p_url, :body => p_body.to_json, :headers => { 'Content-Type' => 'application/json' }).parsed_response
+    HTTParty.post(p_url, :body => p_body.to_json, :headers => p_headers ).parsed_response
   end
 
 end
