@@ -7,8 +7,13 @@ class GoogleSheetsService
   end  
 
   def get_lines_from_sheet (p_offset)
-    response = HttpTool.get("#{BASE_URL}#{@sheet_id}/values/A#{p_offset.to_s}:F#{(p_offset + 100).to_s}?key=#{@api_key}")
-    parse_response(response)
+    begin
+      response = HttpTool.get("#{BASE_URL}#{@sheet_id}/values/A#{p_offset.to_s}:F#{(p_offset + 100).to_s}?key=#{@api_key}")
+      parse_response(response)
+    rescue Exception => e
+      LoggerTool.log_error(e)
+      []
+    end
   end
 
   private def parse_response (p_response)

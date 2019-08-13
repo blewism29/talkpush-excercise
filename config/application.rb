@@ -11,8 +11,11 @@ module TalkpushExcercise
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
-    config.autoload_paths += Dir["#{config.root}/app/services/**/**"]
-    config.autoload_paths += Dir["#{config.root}/app/tools/**/**"]
+    config.autoload_paths += Dir["#{config.root}/lib/managers"]
+    config.autoload_paths += Dir["#{config.root}/lib/services"]
+    config.autoload_paths += Dir["#{config.root}/lib/tools"]
+
+    config.logger = ActiveSupport::Logger.new("log/#{Rails.env}.log")
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

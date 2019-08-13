@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
       @@helper.create_new_candidates
     end
 
-    @@helper = CandidateHelper.new
+    @@helper = CandidateManager.new
 
 end
