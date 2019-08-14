@@ -7,7 +7,9 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module TalkpushExcercise
+
   class Application < Rails::Application
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
@@ -16,6 +18,8 @@ module TalkpushExcercise
     config.autoload_paths += Dir["#{config.root}/lib/tools"]
 
     config.logger = ActiveSupport::Logger.new("log/#{Rails.env}.log")
+
+    require_relative 'app_jobs'
     
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

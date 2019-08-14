@@ -24,7 +24,7 @@ These are the steps for getting a running copy of this repository.
 3. Open on an editor the file *config/environments/development.rb.sample* and rename it to development.rb (just remove the ".sample" from the name).
 4. In the same file, replace the value of the variable named "GOOGLE_SHEETS_API_KEY" for the value of your google api key authorized to access the Google Sheets API (https://console.developers.google.com/apis/dashboard) and the variable named "GOOGLE_SHEET_ID" for the id of one of your google sheets (see the **Solution requirements** section for the structure that the sheet must have).
 5. In the same file, replace the value of the variable named: "TALKPUSH_CAMPAIGNID" for the talkpush campaign in which you want to create candidates, replace the value of the variable named "TALKPUSH_API_KEY" with your talkpush api key.
-6. Run the project by executing the command: ``` Clockwork config/app_jobs ```
+6. Run the project by executing the command: ``` rails s ```
 
 ## Running the tests
 
@@ -32,7 +32,7 @@ Explain how to run the automated tests for this system
 
 ## Deployment
 
-Same steps as installing but with the file *config/environments/production.rb.sample* instead of *development.rb.sample*
+Same steps as installing but with the file *config/environments/production.rb.sample* instead of *development.rb.sample* and the final step commande would be `RAILS_ENV=production rails s ` for a simple deploy, otherwise, with apache passenger it is possible to deploy this project
 
 ## Versioning
 
