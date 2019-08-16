@@ -27,10 +27,6 @@ These are the steps for getting a running copy of this repository.
 7. In the same file, replace the value of the variable "CREATE_CANDIDATE_JOB_TIME_INTERVAL" with the interval of time, expressed in minutes, you want the job to run
 8. Run the project by executing the command: ``` rails s ```
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
 ## Deployment
 
 Same steps as installing but with the file *config/environments/production.rb.sample* instead of *development.rb.sample* and the final step commande would be `RAILS_ENV=production rails s ` for a simple deploy, otherwise, with apache passenger it is possible to deploy this project
