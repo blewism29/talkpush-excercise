@@ -43,4 +43,18 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  ##### APP CONSTANTS #######
+
+  ## App
+  config.CREATE_CANDIDATE_JOB_TIME_INTERVAL = 1
+
+  ## Google Sheets API
+  config.GOOGLE_SHEETS_API_KEY = ''
+  config.GOOGLE_SHEET_ID = ''
+  
+  ## Talkpush
+  config.TALKPUSH_CAMPAIGNID = 
+  config.TALKPUSH_API_KEY = ''
+  config.TALKPUSH_API_SECRET = ''
 end

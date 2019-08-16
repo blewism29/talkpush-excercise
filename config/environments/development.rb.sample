@@ -62,6 +62,9 @@ Rails.application.configure do
 
   ##### APP CONSTANTS #######
 
+  ## App
+  config.CREATE_CANDIDATE_JOB_TIME_INTERVAL = 1
+
   ## Google Sheets API
   config.GOOGLE_SHEETS_API_KEY = ''
   config.GOOGLE_SHEET_ID = ''

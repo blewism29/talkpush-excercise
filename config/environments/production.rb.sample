@@ -91,4 +91,18 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  ##### APP CONSTANTS #######
+
+  ## App
+  config.CREATE_CANDIDATE_JOB_TIME_INTERVAL = 1
+
+  ## Google Sheets API
+  config.GOOGLE_SHEETS_API_KEY = ''
+  config.GOOGLE_SHEET_ID = ''
+  
+  ## Talkpush
+  config.TALKPUSH_CAMPAIGNID = 
+  config.TALKPUSH_API_KEY = ''
+  config.TALKPUSH_API_SECRET = ''
 end
