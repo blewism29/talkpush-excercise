@@ -1,6 +1,6 @@
 # Talkpush Technical Test
 
-Talkpush technical test for ruby on rais job position. Given a google sheets, recurrently check for changes on it and if there is a new one, create a candidate through the talkpush api with the data.
+Talkpush technical test for ruby on rails job position. Given a google sheets, recurrently check for changes on it and if there is a new one, create a candidate through the talkpush api with the data.
 
 ## Getting Started
 
@@ -24,7 +24,8 @@ These are the steps for getting a running copy of this repository.
 3. Open on an editor the file *config/environments/development.rb.sample* and rename it to development.rb (just remove the ".sample" from the name).
 4. In the same file, replace the value of the variable named "GOOGLE_SHEETS_API_KEY" for the value of your google api key authorized to access the Google Sheets API (https://console.developers.google.com/apis/dashboard) and the variable named "GOOGLE_SHEET_ID" for the id of one of your google sheets (see the **Solution requirements** section for the structure that the sheet must have).
 5. In the same file, replace the value of the variable named: "TALKPUSH_CAMPAIGNID" for the talkpush campaign in which you want to create candidates, replace the value of the variable named "TALKPUSH_API_KEY" with your talkpush api key.
-6. Run the project by executing the command: ``` rails s ```
+7. In the same file, replace the value of the variable "CREATE_CANDIDATE_JOB_TIME_INTERVAL" with the interval of time, expressed in minutes, you want the job to run
+8. Run the project by executing the command: ``` rails s ```
 
 ## Running the tests
 
