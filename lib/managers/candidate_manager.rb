@@ -18,6 +18,6 @@ class CandidateManager
     @file_tool.write_data_to_file(ROW_FILE_URL, last_row + new_candidates.size)
   end
 
-  ROW_FILE_URL = "tmp/storage/last_row.txt"
+  ROW_FILE_URL = "tmp/last_row.txt"
   
 end
