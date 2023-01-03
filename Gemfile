@@ -64,5 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ###
 
-gem 'httparty', '~> 0.13.7'
+gem 'httparty', '~> 0.21.0'
 gem 'clockwork', '~> 2.0'
